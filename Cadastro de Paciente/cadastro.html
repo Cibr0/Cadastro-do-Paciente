@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro do Paciente</title>
+  </head>
+  <body>
+    <div class="form">
+      <form action="" id="formcd" >
+        <h2>Cadastro</h2>
+        <label for="nome">Nome</label>
+        <div class="input">
+          <input
+            id="nome"
+            maxlength="100"
+            placeholder="nome"
+            type="text"
+            required
+          />
+          <span id="nomeERROR" class="erro" ></span>
+        </div>
+
+        <label for="cpf">CPF</label>
+        <div class="input">
+          <input
+            id="cpf"
+            maxlength="14"
+            placeholder="000.000.000-00"
+            type="text"
+            
+          />
+          <span id="cpfERROR" class="erro" ></span>
+        </div>
+
+        <label for="data">Data de Nascimento</label>
+        <div class="input">
+          <input
+            id="data"
+            placeholder="Data de Nascimento"
+            type="date"
+           
+          />
+          <span id="dataERROR" ></span>
+        </div>
+
+        <label for="tel">Telefone</label>
+        <div class="input">
+          <input
+            id="tel"
+            placeholder="(00) 00000-0000"
+            maxlength="15"
+            type="tel"
+            required
+          />
+          <span id="telERROR" class="erro" ></span>
+        </div>
+
+        <label for="email">Email</label>
+        <div class="input">
+          <input
+            id="email"
+            placeholder="seuemail@exemplo.com"
+            type="email"
+            required
+          />
+          <span id="emailERROR" class="erro" ></span>
+        </div>
+
+        <div id="btn">
+          <button type="submit">Cadastrar</button>
+        </div>
+
+        
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
